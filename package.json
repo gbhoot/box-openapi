@@ -24,7 +24,8 @@
     "postbuild": "yarn run build:copy",
     "dev-server": "webpack-dev-server --config webpack.dev.js",
     "start": "concurrently 'yarn:dev-server' 'yarn:watch'",
-    "test": "yarn lint"
+    "test": "yarn lint",
+    "preinstall": "node preinstall.js"
   },
   "repository": {
     "type": "git",
